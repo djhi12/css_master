@@ -17,7 +17,7 @@
 
 <body>
     <main>
-            <h1>Selctors | Chapter 1</h1>
+        <h1>Selectors | Chapter 1</h1>
         <div>
             <form method="GET" action="/processor">
                 <h1>Buy Tickets to the Web Developer Gala</h1>
@@ -31,7 +31,7 @@
                         <span class="help">Limit 8</span>
                         <input type="number" value="1" name="quantity" id="quantity" step="1" min="1" max="8">
                     </p>
-                    
+
                     <p>
                         <label for="quantity">Dinner Packages</label>
                         <span class="help">Serves 2</span>
@@ -43,13 +43,12 @@
                     <p>
                         <label for="ccn">Credit card number</label>
                         <span class="help">No spaces or dashes, please.</span>
-                        <input type="text" id="ccn" name="ccn" placeholder="372000000000008" 
-                        maxlength="16" size="16">
+                        <input type="text" id="ccn" name="ccn" placeholder="372000000000008" maxlength="16" size="16">
                     </p>
                     <p>
                         <label for="expiration">Expiration date</label>
                         <span class="help"><abbr title="Two-digit month">MM
-                                </abbr>/<abbr title="Four-digit Year">MM</abbr>YYYY</span>
+                            </abbr>/<abbr title="Four-digit Year">MM</abbr>YYYY</span>
                         <input type="text" id="expiration" name="expiration" placeholder="01/2018" maxlength="7"
                             size="7">
                     </p>
@@ -62,8 +61,7 @@
                     </p>
                     <p>
                         <label for="street_address">Street Address</label>
-                        <input type="text" id="name" name="name" placeholder="ex: 12345 Main Street, Apt 23" 
-                        size="40">
+                        <input type="text" id="name" name="name" placeholder="ex: 12345 Main Street, Apt 23" size="40">
                     </p>
                     <p>
                         <label for="city">City</label>
@@ -82,6 +80,46 @@
                 </fieldset>
                 <button type="submit">Buy Tickets!</button>
             </form>
+        </div>
+        <hr class="matching-attribute">
+        <div>
+            <h1>Attribute Selectors</h1>
+            <h2>Matching Attribute Presence</h2>
+            <h3 class="attribute-value">[attribute~="value"]</h3>
+            <a href="http://example.com/" rel="external friend">Bob</a>
+
+            <hr class="matching-hypenated">
+
+            <h2>Matching Hyphenated Attribute Values</h2>
+            <h3>Language</h3>
+            <p lang="fr-FR"><q>Tout le monde</q></p>
+            <p><q>All the world.</q>, or <q>Everyone</q></p>
+
+            <hr class="matching-hypenated">
+
+            <h2>Article Promo</h2>
+            <h3 class="attribute-value">[attribute|="value"]</h3>
+
+            <article class="articlepromo">
+                <h3>U.S. ratifies Kyoto Protocol</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
+            </article>
+
+            <article class="articlepromo-entertainment">
+                <h3>Kardashian-Wests welcome South to the world</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
+            </article>
+
+            <article class="articlepromo-sports">
+                <h3>New York Knicks win NBA title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
+            </article>
+        
+            <article class="articlepromo-business">
+                <h3>Google Buys EverythingOnTheInternet.com</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
+            </article>
+
         </div>
     </main>
     <script src="/chapter_1_selectors/chapter_1.js"></script>
