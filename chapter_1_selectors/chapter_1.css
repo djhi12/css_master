@@ -122,8 +122,17 @@ Matching Hyphenated Attribute Values
 
 /* Matching Attribute Values by Substring */
 [href^="tel:"] {
-    background: ;
+    background: #62717e;
+    border-radius: 100px;
+    padding: .5em 1em .5em 2em;
 }
+
+[href$="5555"] {
+    background: #e91e63;
+}
+
+
+
 
 
 
