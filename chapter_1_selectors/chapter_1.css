@@ -86,6 +86,9 @@ Matching Hyphenated Attribute Values
 }
 
 /* Article Promo */
+
+
+
 [class|="articlepromo"] {
     border-top: 5px solid #4caf50;
     color: #555;
@@ -102,6 +105,26 @@ Matching Hyphenated Attribute Values
 [class|="articlepromo"] p {
     margin: 0 0 1em;
 }
+
+[class|="articlepromo-entertainment"] {
+    border-top: 5px solid red;
+
+}
+
+[class|="articlepromo-sports"] {
+    border-top: 5px solid blue;
+}
+
+[class|="articlepromo-business"] {
+    border-color: 5px solid red;
+}
+
+
+/* Matching Attribute Values by Substring */
+[href^="tel:"] {
+    background: ;
+}
+
 
 
 
