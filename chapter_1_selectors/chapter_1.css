@@ -125,12 +125,40 @@ Matching Hyphenated Attribute Values
     background: #62717e;
     border-radius: 100px;
     padding: .5em 1em .5em 2em;
+    color: white;
 }
 
 [href$="5555"] {
     background: #e91e63;
 }
 
+/* Pseudo-classes versus Pseudo-elements  */
+
+
+
+/* Pseudo-elements */
+
+/* CSS - The ::before Pseudo-element */
+
+/* CSS - The ::after Pseudo-element */
+
+/* The ::first-letter Pseudo-element */
+p.first-letter::first-letter {
+    font-size: 30px;
+    color: white;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid pink;
+    text-decoration: dotted;
+}
+
+/* The ::first-line Pseudo-element */
+.first-line::first-line {
+    color: green;
+}
+
+/* CSS - The ::selection Pseudo-element */
 
 
 
