@@ -193,6 +193,46 @@ p.first-letter::first-letter {
     display: table;
 }
 
+.clearfix::after {
+    clear: both;
+}
+
+
+/* Creating Typographic Effects with ::first-letter */
+
+
+p.typographic::first-letter {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic;
+    color: #f551b5;
+    line-height: .5;
+}
+
+p.typographic-1::first-letter {
+    font: bold italic 3em / .5 serif;
+    color: #f551b5;
+}
+
+p.typographic-2::first-letter {
+    font: bold italic 3em / .5 serif;
+    font-style: italic;
+    color: #607d8b;
+    float: left;
+    margin: 0.2em 0.25em .01em 0;
+}
+
+p.typographic-3::first-letter {
+    font: bold italic 3em / .5 serif;
+    font-style: italic;
+    color: #607d8b;
+    float: left;
+    margin: 0.2em 0.25em .01em 0;
+}
+
+
+
 
 
 
