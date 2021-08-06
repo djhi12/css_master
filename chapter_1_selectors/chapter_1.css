@@ -162,6 +162,39 @@ p.first-letter::first-letter {
 
 
 
+/* ::after */
+
+/* Apply to the label element associated with a required field */
+.required::after {
+    content: ' (required) ';
+    color: #c00;
+    font-size: .8em;
+}
+
+
+/* Form */
+
+
+.helptext::before {
+    content: ' ( ';
+}
+
+.helptext::after {
+    content: ' ) ';
+}
+
+
+/* Clearfix */
+
+/* Use :before and :after if you need to support IE <= 8 */
+.clearfix::before,
+.clearfix::after {
+    content: ' ';
+    display: table;
+}
+
+
+
 
 
 

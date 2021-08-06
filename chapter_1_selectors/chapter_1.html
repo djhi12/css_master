@@ -19,6 +19,7 @@
     <main>
         <h1>Selectors | Chapter 1</h1>
         <div>
+            <!---->
             <form method="GET" action="/processor">
                 <h1>Buy Tickets to the Web Developer Gala</h1>
                 <p>Tickets are $10 each. Dinner packages are an extra $5. All
@@ -116,7 +117,7 @@
                 <h3>New York Knicks win NBA title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
             </article>
-        
+
             <article class="articlepromo-business">
                 <h3>Google Buys EverythingOnTheInternet.com</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing ....</p>
@@ -131,17 +132,48 @@
             <hr class="matching-hypenated">
 
             <h2>The ::first-letter Pseudo-element</h2>
-            <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis debitis, 
-                minima quo cum fugiat iure, doloremque maiores facere temporibus beatae eum 
+            <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis debitis,
+                minima quo cum fugiat iure, doloremque maiores facere temporibus beatae eum
                 libero non praesentium aliquid corrupti accusamus quae explicabo.</p>
 
             <hr class="matching-hypenated">
 
             <h2>The ::first-line Pseudo-element</h2>
-            <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus 
-                asperiores veritatis omnis debitis nesciunt, blanditiis hic amet eos 
-                ipsum sit deleniti explicabo saepe aperiam quidem officia impedit dolorum? 
+            <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus
+                asperiores veritatis omnis debitis nesciunt, blanditiis hic amet eos
+                ipsum sit deleniti explicabo saepe aperiam quidem officia impedit dolorum?
                 Modi.</p>
+
+            <hr class="matching-hypenated">
+
+            <h2 class="after">::after</h2>
+            <p class="required">Lorem</p>
+
+            <hr class="matching-hypenated">
+
+            <h2>Form</h2>
+
+            <form method="post" action="/save">
+                <fieldset>
+                    <legend>Change Your Password</legend>
+                    <p>
+                        <label for="password">Enter a new password</label>
+                        <input type="password" id="password" name="password">
+                    </p>
+                    <p>
+                        <label for="password2">Retype your password</label>
+                        <input type="password" id="password2" name="password2">
+                    </p>
+                    <p class="helptext">Longer passwords are stronger.</p>
+                    <p><button type="submit">Save changes</button></p>
+                </fieldset>
+            </form>
+
+            <h2>Clearfix</h2>
+            <div class="clearfix">
+                <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+              </div>
         </div>
     </main>
     <script src="/chapter_1_selectors/chapter_1.js"></script>
