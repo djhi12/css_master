@@ -4,6 +4,10 @@ main {
     margin: auto;
 }
 
+hr {
+    margin-top: 50px;
+}
+
 /* Descendant Selector */
 form h1 {
     color: #009;
@@ -231,6 +235,19 @@ p.typographic-3::first-letter {
     margin: 0.2em 0.25em .01em 0;
 }
 
+
+/* Creating Typographic Effects with ::first-line */
+
+p.typographic-4::first-line {
+    font: bold 1.5em serif;
+    font-style: italic;
+    color: #673ab7;
+}
+
+p.typographic-5::before {
+    content: '!!!';
+    display: block;
+}
 
 
 
