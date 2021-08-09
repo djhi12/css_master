@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CSS Master</title>
+    <title>CSS Master | Chapter 1 Selector</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Project for Daniel John Idorot">
@@ -209,6 +209,73 @@
                 perferendis laudantium accusantium dicta, quia fuga in repudiandae omnis
                 temporibus eligendi voluptatibus quidem libero? Minus ducimus repudiandae
                 assumenda molestiae!</p>
+
+            <hr>
+
+            <!-- Highlighting Page Fragments with :target -->
+            <section id="comments">
+                <h2>Comments on this post</h2>
+                <article class="comment-1146937891" id="comment-1146937891">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iure quisquam velit nesciunt officia excepturi recusandae saepe,
+                    ullam enim quod esse eligendi, quia culpa, modi et aut ex praesentium tempora nisi.
+                </article>
+                <br>
+                <article class="comment" id="comment-1146937892">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Earum, laborum! Similique ipsa at dicta repudiandae commodi dolorum
+                    omnis illo consequuntur, eius hic provident maxime, explicabo magnam? Consectetur
+                    minima illo soluta!</article>
+                <br>
+                <article class="comment" id="comment-1146937893">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Earum, nemo tenetur. Dolorum incidunt doloribus eum illum cumque!
+                    Incidunt maxime eaque ipsum earum quidem, voluptas aut eos expedita doloribus
+                    odio modi.</article>
+            </section>
+
+            <hr>
+
+            <div class="tabbed-widget">
+                <div class="tab-wrap">
+                    <a href="#tab1">Tab 1</a>
+                    <a href="#tab2">Tab 2</a>
+                    <a href="#tab3">Tab 3</a>
+                </div>
+                <ul class="tab-body">
+                    <li id="tab1">
+                        <p>This is tab 1.</p>
+                    </li>
+                    <li id="tab2">
+                        <p>This is tab 2</p>
+                    </li>
+                    <li id="tab3">
+                        <p>This is tab 3.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <form method="post" action="#">
+                <h1>Join the Cool Kids Club</h1>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <fieldset>
+                    <legend>Receive a digest?</legend>
+                    <p>
+                        <input type="radio" id="daily" name="digest">
+                        <label for="daily" class="label-radio">Daily</label>
+                        <input type="radio" id="weekly" name="digest">
+                        <label for="weekly" class="label-radio">Weekly</label>
+                    </p>
+                </fieldset>
+                <button type="submit">Buy Tickets!</button>
+            </form>
+
         </div>
     </main>
     <script src="/chapter_1_selectors/chapter_1.js"></script>

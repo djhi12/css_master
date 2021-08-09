@@ -1,4 +1,3 @@
-
 main {
     max-width: 1000px;
     margin: auto;
@@ -14,24 +13,24 @@ form h1 {
 }
 
 /* child combinator (>) */
-form > p {
+form>p {
     font-size: 22px;
 }
 
 /* adjacent sibling combinator (+) */
-label + input {
+label+input {
     display: block;
     clear: both;
-    border:  1px solid red;
+    border: 1px solid red;
 }
 
-* + fieldset {
+*+fieldset {
     margin: 5em 0;
     border: 1px solid green;
 }
 
 /* general sibling combinator (~) */
-label ~ input {
+label~input {
     display: block;
 }
 
@@ -56,7 +55,7 @@ Matching Attribute Presence
     border-bottom: 3px solid #ccc;
 }
 
-[rel~=friend]:link, 
+[rel~=friend]:link,
 [rel~=friend]:visited {
     color: #34444c;
 }
@@ -82,11 +81,13 @@ Matching Hyphenated Attribute Values
 }
 
 [lang|="fr"] q:before {
-    content: '\00AB'; /* Left angle quote */
+    content: '\00AB';
+    /* Left angle quote */
 }
 
 [lang|="fr"] q:after {
-    content: '\00BB'; /* Right angle quote */
+    content: '\00BB';
+    /* Right angle quote */
 }
 
 /* Article Promo */
@@ -97,7 +98,7 @@ Matching Hyphenated Attribute Values
     border-top: 5px solid #4caf50;
     color: #555;
     line-height: 1.3;
-    padding-top:.5em;
+    padding-top: .5em;
 }
 
 [class|="articlepromo"] h3 {
@@ -250,9 +251,36 @@ p.typographic-5::before {
 }
 
 
+/* User Interface Fun with ::selection */
+p.typographic-5::selection {
+    color: white;
+    background-color: green;
+}
+
+::selection {
+    background: #9f0;
+    color: #600;
+}
+
+/* Highlighting Page Fragments with :target */
+
+.comment:target {
+    background: #ffeb3b;
+    border-color: #ffc107;
+}
 
 
+/*  */
 
+[id^=tab] {
+    position: absolute;
+}
 
+[id^=tab]:first-child {
+    z-index: 1;
+}
 
+[id^=tab]:target {
+    z-index: 2;
+}
 
