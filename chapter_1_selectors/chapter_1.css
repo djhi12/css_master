@@ -284,3 +284,67 @@ p.typographic-5::selection {
     z-index: 2;
 }
 
+
+/* Negating Selectors with :not() */
+
+
+label:not(.label-radio) {
+    font-weight: bold;
+    display: block;
+}
+
+/*
+1. Unfortunately, this won’t work, as each selector overrides 
+the previous one. It’s the equivalent of typing: 
+*/
+input:not([type=radio]),
+input:not([type=checkbox]),
+input:not([type=range]) {
+    color: white;
+}
+
+
+input:not([type=radio]) {
+    color: white;
+}
+
+input:not([type=checkbox]) {
+    color: white;
+}
+
+input:not([type=range]) {
+    color: white;
+}
+
+/*
+1. Instead, we need to chain our :not() pseudo-classes, 
+so that they all filter the input element:
+*/
+input:not([type=radio]):not([type=checkbox]):not([type=range]) {
+    color: white;
+}
+
+
+/*
+1. Unfortunately, no major browser supports this yet, 
+so use chaining in the meantime.
+*/
+input:not([type=radio], [type=checkbox], [type=range]) {
+    color: white;
+}
+
+
+/* Selecting Elements by Their Index */
+/* :first-child and :last-child */
+
+body {
+    font: 16px / 1.5 sans-serif;
+}
+
+:first-child {
+    color: #e91e63;
+}
+
+:last-child {
+    color: #4caf50;
+}
